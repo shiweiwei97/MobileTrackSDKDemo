@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#define APP_KEY @"5555dcee67e58e9646000a25"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

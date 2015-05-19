@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MobileTrackSDK/MobileTrackSDK.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +15,14 @@
 
 @implementation AppDelegate
 
+- (void)mobileTrack {
+    [MobileTrackSDK setAppVersion:XcodeAppVersion];
+    [MobileTrackSDK startWithAppkey:APP_KEY];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self mobileTrack];
     return YES;
 }
 

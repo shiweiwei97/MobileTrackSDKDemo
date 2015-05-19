@@ -14,6 +14,8 @@
 		5C7DCBD21B0B7893009C2A42 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C7DCBD11B0B7893009C2A42 /* Images.xcassets */; };
 		5C7DCBD51B0B7893009C2A42 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C7DCBD31B0B7893009C2A42 /* LaunchScreen.xib */; };
 		5C7DCBE11B0B7893009C2A42 /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DCBE01B0B7893009C2A42 /* DemoTests.m */; };
+		5C7DCBF61B0B78E5009C2A42 /* libMobileTrackSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C7DCBF11B0B78AD009C2A42 /* libMobileTrackSDK.a */; };
+		5C7DCBF91B0B7C10009C2A42 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DCBF81B0B7C10009C2A42 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +25,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5C7DCBC01B0B7893009C2A42;
 			remoteInfo = Demo;
+		};
+		5C7DCBF01B0B78AD009C2A42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C7DCBEA1B0B78AD009C2A42 /* MobileTrackSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5CE721FC1B085FFC00D3DA0D;
+			remoteInfo = MobileTrackSDK;
+		};
+		5C7DCBF21B0B78AD009C2A42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C7DCBEA1B0B78AD009C2A42 /* MobileTrackSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5CE722071B085FFC00D3DA0D;
+			remoteInfo = MobileTrackSDKTests;
+		};
+		5C7DCBF41B0B78DC009C2A42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C7DCBEA1B0B78AD009C2A42 /* MobileTrackSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CE721FB1B085FFC00D3DA0D;
+			remoteInfo = MobileTrackSDK;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -40,6 +63,9 @@
 		5C7DCBDA1B0B7893009C2A42 /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C7DCBDF1B0B7893009C2A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C7DCBE01B0B7893009C2A42 /* DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoTests.m; sourceTree = "<group>"; };
+		5C7DCBEA1B0B78AD009C2A42 /* MobileTrackSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MobileTrackSDK.xcodeproj; path = ../MobileTrackSDK/MobileTrackSDK.xcodeproj; sourceTree = "<group>"; };
+		5C7DCBF71B0B7C10009C2A42 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		5C7DCBF81B0B7C10009C2A42 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C7DCBF61B0B78E5009C2A42 /* libMobileTrackSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +90,7 @@
 		5C7DCBB81B0B7893009C2A42 = {
 			isa = PBXGroup;
 			children = (
+				5C7DCBEA1B0B78AD009C2A42 /* MobileTrackSDK.xcodeproj */,
 				5C7DCBC31B0B7893009C2A42 /* Demo */,
 				5C7DCBDD1B0B7893009C2A42 /* DemoTests */,
 				5C7DCBC21B0B7893009C2A42 /* Products */,
@@ -86,6 +114,8 @@
 				5C7DCBCB1B0B7893009C2A42 /* ViewController.h */,
 				5C7DCBCC1B0B7893009C2A42 /* ViewController.m */,
 				5C7DCBCE1B0B7893009C2A42 /* Main.storyboard */,
+				5C7DCBF71B0B7C10009C2A42 /* DetailViewController.h */,
+				5C7DCBF81B0B7C10009C2A42 /* DetailViewController.m */,
 				5C7DCBD11B0B7893009C2A42 /* Images.xcassets */,
 				5C7DCBD31B0B7893009C2A42 /* LaunchScreen.xib */,
 				5C7DCBC41B0B7893009C2A42 /* Supporting Files */,
@@ -119,6 +149,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5C7DCBEB1B0B78AD009C2A42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C7DCBF11B0B78AD009C2A42 /* libMobileTrackSDK.a */,
+				5C7DCBF31B0B78AD009C2A42 /* MobileTrackSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,6 +172,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5C7DCBF51B0B78DC009C2A42 /* PBXTargetDependency */,
 			);
 			name = Demo;
 			productName = Demo;
@@ -186,6 +226,12 @@
 			mainGroup = 5C7DCBB81B0B7893009C2A42;
 			productRefGroup = 5C7DCBC21B0B7893009C2A42 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5C7DCBEB1B0B78AD009C2A42 /* Products */;
+					ProjectRef = 5C7DCBEA1B0B78AD009C2A42 /* MobileTrackSDK.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5C7DCBC01B0B7893009C2A42 /* Demo */,
@@ -193,6 +239,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5C7DCBF11B0B78AD009C2A42 /* libMobileTrackSDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMobileTrackSDK.a;
+			remoteRef = 5C7DCBF01B0B78AD009C2A42 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5C7DCBF31B0B78AD009C2A42 /* MobileTrackSDKTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MobileTrackSDKTests.xctest;
+			remoteRef = 5C7DCBF21B0B78AD009C2A42 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5C7DCBBF1B0B7893009C2A42 /* Resources */ = {
@@ -222,6 +285,7 @@
 				5C7DCBCD1B0B7893009C2A42 /* ViewController.m in Sources */,
 				5C7DCBCA1B0B7893009C2A42 /* AppDelegate.m in Sources */,
 				5C7DCBC71B0B7893009C2A42 /* main.m in Sources */,
+				5C7DCBF91B0B7C10009C2A42 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +304,11 @@
 			isa = PBXTargetDependency;
 			target = 5C7DCBC01B0B7893009C2A42 /* Demo */;
 			targetProxy = 5C7DCBDB1B0B7893009C2A42 /* PBXContainerItemProxy */;
+		};
+		5C7DCBF51B0B78DC009C2A42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MobileTrackSDK;
+			targetProxy = 5C7DCBF41B0B78DC009C2A42 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -347,8 +416,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					$SOURCE_ROOT/include,
+				);
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -357,8 +432,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					$SOURCE_ROOT/include,
+				);
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
