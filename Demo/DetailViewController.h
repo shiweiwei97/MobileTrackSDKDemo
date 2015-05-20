@@ -10,7 +10,10 @@
 
 @interface DetailViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UILabel *recipeLabel;
 @property (strong, nonatomic) NSString *recipeName;
+
+@property (strong, nonatomic) IBOutlet UILabel *recipeLabel;
+@property (strong, nonatomic) IBOutlet UIButton *startButton;
+@property (strong, nonatomic) IBOutlet UIButton *stopButton;
 
 @end

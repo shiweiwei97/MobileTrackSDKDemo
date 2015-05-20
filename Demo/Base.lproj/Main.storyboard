@@ -60,16 +60,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4T-wb-wXW">
-                                <rect key="frame" x="93" y="186" width="335" height="110"/>
+                                <rect key="frame" x="48" y="174" width="335" height="110"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyQ-TY-yzw">
+                                <rect key="frame" x="25" y="311" width="121" height="30"/>
+                                <state key="normal" title="Start Event">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startEvent:" destination="E0H-wq-5L9" eventType="touchUpInside" id="3FA-kU-4Hs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvX-Fa-HSo">
+                                <rect key="frame" x="217" y="308" width="127" height="30"/>
+                                <state key="normal" title="Stop Event">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="endEvent:" destination="E0H-wq-5L9" eventType="touchUpInside" id="UpG-Hr-ihW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="recipeLabel" destination="M4T-wb-wXW" id="lyz-9P-W9e"/>
+                        <outlet property="startButton" destination="pyQ-TY-yzw" id="vHb-p6-H5y"/>
+                        <outlet property="stopButton" destination="mvX-Fa-HSo" id="Vjq-65-IcN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="76h-wn-ccJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
