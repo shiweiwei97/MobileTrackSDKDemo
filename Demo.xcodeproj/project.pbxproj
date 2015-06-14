@@ -497,6 +497,7 @@
 				5C7DCBE61B0B7893009C2A42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C7DCBE71B0B7893009C2A42 /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +506,7 @@
 				5C7DCBE91B0B7893009C2A42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
